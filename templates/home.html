@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <style>
+        /* CSS styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            background: url('/static/Home_image4.jpg') no-repeat center center fixed;
+            background-size: cover;
+            
+        }
+
+        header {
+            background-color:#1d80b9;
+            color:#1d80b9;
+            padding: 10px 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            color: rgb(25, 16, 16);
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh; /* Adjust the height of the main section */
+        }
+
+        .writing-section {
+           /* background-color: rgba(255, 255, 255, 0.9);*/
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(234, 220, 220, 0.1);
+            text-align: center;
+        }
+        .writing-section p {
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: bold; /* Increase font weight */
+            font-size: 20px;
+        }
+
+        .recommendation-button {
+            margin-top: 5px;
+            size: 5px;
+        }
+
+        .recommendation-button a {
+            display: inline-block;
+            padding: 2px 5px;
+            text-decoration: none;
+            background-color: rgb(20, 9, 9);/*#1DB954;*/
+           color: #1d80b9;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+            size: 5px;
+        
+        }
+
+        .recommendation-button a:hover {
+            background-color: #e3d2d2;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation bar with links -->
+        <nav>
+            <ul>
+               <!-- <li><a href="/">Recommendation</a></li>-->
+                <li><a href="/home">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main content for home page -->
+    <main>
+        <h1>Welcome to our Music Recommendation Website!</h1>
+        <!-- Writing section -->
+        <div class="writing-section">
+            <h2>Discover the Best Music for You</h2>
+            <p>Embark on a musical journey like never before! Our platform leverages state-of-the-art machine learning to craft a personalized playlist tailored explicitly to your unique music taste. Uncover hidden gems and explore a myriad of tracks perfectly suited to your preferences.</p>
+            <p>From the latest chart-toppers to hidden treasures in different genres, our system dives into the nuances of your favorite songs, artists, and genres to curate a list of tracks just for you. Discover new melodies that resonate with your soul or rediscover old favorites, all in one place.</p>
+            <p>Explore our intuitive interface, enter your favorite song or artist, and witness our system's magic as it crafts a playlist of similar tracks. Join us in this harmonious adventure and let the melodies captivate your senses!"</p>
+            <!-- Recommendation button -->
+            <div class="recommendation-button">
+                <a href="/"><img src="/static/Play_image2.png" alt=""width="100" height="80"></a>
+                <p>Get Recommendations</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Music Recommendation using ML</p>
+    </footer>
+</body>
+</html>
