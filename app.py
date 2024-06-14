@@ -8,7 +8,7 @@ from scipy.spatial import distance
 
 app = Flask(__name__)
 
-data = pd.read_csv("C:\\Users\\Dell\\Downloads\\data.csv")
+data = pd.read_csv("data.csv")
 data.head()
 
 data = data.drop(columns=["key","mode","time_signature"])
